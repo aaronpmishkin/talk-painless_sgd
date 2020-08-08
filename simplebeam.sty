@@ -1,0 +1,58 @@
+\usepackage{xfrac}
+
+\setbeamertemplate{frametitle}
+  {\insertframetitle\strut%
+    \vskip0\baselineskip%
+    \leaders\vrule width \textwidth\vskip0.4pt%
+    \vskip0pt%
+    \nointerlineskip}
+\setbeamertemplate{itemize item}{$\bullet$}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[text line]{%
+    \hspace{\textwidth} \hspace{1.5em} \strut{%
+        \normalsize\sf\color{black!60}%
+         \sfrac{\insertframenumber}{\inserttotalframenumber}
+    }%
+    % \hfill%
+}
+
+\AtBeginSection[]{
+{ \setbeamercolor{background canvas}{bg=LightCharcoal}
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title} \insertsectionhead\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}}
+
+\setbeamerfont{bibliography item}{size=\footnotesize}
+\setbeamerfont{bibliography entry author}{size=\footnotesize}
+\setbeamerfont{bibliography entry title}{size=\footnotesize}
+\setbeamerfont{bibliography entry location}{size=\footnotesize}
+\setbeamerfont{bibliography entry note}{size=\footnotesize}
+
+\definecolor{lightapricot}{rgb}{0.99, 0.84, 0.69}
+\definecolor{lightblue}{rgb}{0.68, 0.85, 0.9}
+\definecolor{lightcyan}{rgb}{0.88, 1.0, 1.0}
+
+% Define some colors:
+\definecolor{DarkFern}{HTML}{407428}
+\definecolor{DarkCharcoal}{HTML}{4D4944}
+\colorlet{Fern}{DarkFern!85!white}
+\colorlet{Charcoal}{DarkCharcoal!85!white}
+\colorlet{LightCharcoal}{Charcoal!50!white}
+\colorlet{AlertColor}{orange!80!black}
+\colorlet{DarkRed}{red!70!black}
+\colorlet{DarkBlue}{blue!70!black}
+\colorlet{DarkGreen}{green!70!black}
+% Use the colors:
+\setbeamercolor{title}{fg=DarkBlue}
+\setbeamercolor{frametitle}{fg=DarkBlue}
+\setbeamercolor{normal text}{fg=black}
+\setbeamercolor{block title}{fg=black,bg=Fern!25!white}
+\setbeamercolor{block body}{fg=black,bg=Fern!25!white}
+\setbeamercolor{alerted text}{fg=AlertColor}
+\setbeamercolor{itemize item}{fg=DarkCharcoal}
